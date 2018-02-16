@@ -28,4 +28,4 @@ RUN rm -rf /var/lib/apt/lists/*
 # Custom Supervisord config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-CMD ["/usr/bin/supervisord"]
+CMD ["sleep 5 && /usr/bin/supervisord"]
